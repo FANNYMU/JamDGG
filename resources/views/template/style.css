@@ -1,0 +1,93 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Silkscreen", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #f1f1f1;
+    padding: 32px;
+    margin: 8px;
+    color: #171717;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh; /* Ubah height menjadi min-height */
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Mengatur agar flex item wrap ke baris baru jika tidak cukup ruang */
+    width: 100%;
+    justify-content: center;
+}
+
+.icons {
+    margin-top: 8px;
+    font-size: 24px;
+    color: tomato;
+}
+
+.logo2 {
+    fill: #ff0000; /* Ganti dengan warna yang Anda inginkan */
+}
+
+
+.title {
+    font-size: 2em;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.about {
+    color: #f1f1f1;
+    font-size: 50px;
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn {
+    margin-top: 16px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    max-width: 200px; /* Maksimum lebar tombol */
+    background-color: #f1f1f1;
+}
+
+.btn:hover {
+    background-color: blue;
+    color: #f1f1f1;
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+    transition: 0.5s ease-in-out;
+}
+
+/* Media Queries untuk responsif */
+@media only screen and (min-width: 768px) {
+    .about {
+        display: none;
+    }
+
+    .card {
+        width: 45%; /* Mengatur lebar card */
+    }
+}
